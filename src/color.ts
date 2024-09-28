@@ -3,7 +3,7 @@ type RGBArray = [number, number, number]
 /**
  * Applies the provided opacity to a color, color can be in the format of either oklch or hex.
  * @param color - Color string to apply opacity to.
- * @param alpha - Opacity value.
+ * @param alpha - Opacity value between 0 and 1.0.
  */
 export const setColorOpacity = (color: string, alpha: number) => {
   if (color.startsWith('oklch')) {
