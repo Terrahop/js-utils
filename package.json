@@ -1,0 +1,44 @@
+{
+  "name": "@terrahop/js-utils",
+  "version": "0.0.0",
+  "description": "Some helper js utilities for web dev",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "exports": {
+    "./array": {
+      "default": "./src/array.ts"
+    },
+    "./async": {
+      "default": "./src/async.ts"
+    },
+    "./color": {
+      "default": "./src/color.ts"
+    },
+    "./number": {
+      "default": "./src/number.ts"
+    },
+    "./object": {
+      "default": "./src/object.ts"
+    },
+    "./string": {
+      "default": "./src/string.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terrahop/js-utils.git"
+  },
+  "author": "@terrahop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Terrahop/js-utils/issues"
+  },
+  "homepage": "https://github.com/Terrahop/js-utils#readme",
+  "dependencies": {
+    "@types/node": "^22.7.4",
+    "dayjs": "^1.11.13",
+    "typescript": "^5.6.2"
+  }
+}
