@@ -25,6 +25,20 @@ export const hexToRGB = (hex: string): RGBArray => {
 }
 
 /**
+ * @param r - Red.
+ * @param g - Green.
+ * @param b - Blue.
+ * @returns RGb color converted to hex.
+ */
+export const rgbToHex = (r: number, g: number, b: number): string => {
+  const componentToHex = (c: number) => {
+    const hex = c.toString(16)
+    return hex.length === 1 ? '0' + hex : hex
+  }
+  return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b)
+}
+
+/**
  * Get the distance between 2 rgb colors.
  * @param a - First color to compare.
  * @param b - Second color to compare.
